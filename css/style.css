@@ -17,9 +17,12 @@ body {
    SECCIÓN PRINCIPAL
 ================================================== */
 .section {
-  min-height: calc(100vh - 70px);
-  padding: 40px 0;
+  min-height: calc(100vh - 70px); /* deja espacio al footer */
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
 }
+
 
 /* ==================================================
    TARJETA
@@ -87,6 +90,7 @@ body {
 ================================================== */
 .footer-marca {
   padding: 16px 0;
+  text-align: center;
 }
 
 .marca-link {
@@ -101,4 +105,14 @@ body {
 .logo-marca {
   height: 36px;
   opacity: .8;
+}
+
+@media (max-width: 576px) {
+  .card-invitacion {
+    padding: 3.5rem 2rem;
+    min-height: 80vh;       /* ocupa más pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
